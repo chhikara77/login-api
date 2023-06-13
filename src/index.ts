@@ -16,9 +16,9 @@ app.use(express.json());
 
 // Dummy user credentials
 const users = [
-  { username: 'user1', password: 'password1' },
-  { username: 'user2', password: 'password2' },
-  { username: 'user3', password: 'password3' }
+  { username: 'user1@gmail.com', password: 'password1' },
+  { username: 'user2@gmail.com', password: 'password2' },
+  { username: 'user3@gmail.com', password: 'password3' }
 ];
 
 // Login route
