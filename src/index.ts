@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import axios from 'axios';
+import cors from 'cors';
 
 interface AuthenticatedRequest extends Request {
   user: any; // Define the 'user' property with any type or use a specific type for user data
@@ -13,7 +14,7 @@ const SECRET_KEY = 'sachin';
 
 // Middleware to parse JSON body
 app.use(express.json());
-
+app.use(cors());
 // Dummy user credentials
 const users = [
   { username: 'user1@gmail.com', password: 'password1' },
